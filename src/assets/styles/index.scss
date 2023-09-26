@@ -1,0 +1,65 @@
+
+.main{
+    display: flex;
+    gap: 30px;
+
+    @media only screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+
+    .block{
+        width: 33%;
+
+        @media only screen and (max-width: 800px) {
+            width: 100%;
+        }
+    
+        .title{
+            color: #E19898;
+            font-size: 22px;
+            margin-bottom: 20px;
+            margin-top: 0;
+            line-height: 1;
+        }
+
+        > div {
+            @media only screen and (max-width: 800px) {
+                max-height: 350px;
+                overflow-y: scroll;
+            }
+            .task:last-child{
+                margin-bottom: 0;
+            }
+        }
+    
+        .input-title{
+            border: 1px solid  #c5c5c5;
+            padding: 5px 10px;
+            border-radius: 4px;
+            outline: none;
+            height: 30px;
+            width: calc(100% - 20px);
+            margin-bottom: 20px;
+        }
+    
+        .add-btn{
+            display: block;
+            border: 1px solid #AC7088;
+            padding: 5px 20px;
+            height: 40px;
+            color: #AC7088;
+            background: white;
+            border-radius: 4px;
+            width: 110px;
+            margin-left: auto;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.2s linear;
+
+            &:hover{
+                color: white;
+                background: #AC7088;
+            }
+        }
+    }
+}

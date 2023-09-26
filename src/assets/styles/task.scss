@@ -1,0 +1,35 @@
+.task{
+    border: 1px solid #c5c5c5;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+    &-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        h3{
+            margin: 0;
+            color: #AC7088;
+            word-break: break-all;
+            margin-right: 10px;
+        }
+        > div{
+            display: flex;
+            align-items: flex-start;
+            button{
+                border: 0;
+                background-color: white;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    .status{
+        margin: 40px 0 0 0;
+    }
+}
